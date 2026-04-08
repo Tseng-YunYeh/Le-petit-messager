@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/h26-tp1-yunyeh/',
+  base: '/Le-petit-messager/',
   server: {
     open: true
   }
