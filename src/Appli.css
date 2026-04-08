@@ -1,0 +1,11 @@
+.Appli {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d1a;
+}
+
+.Appli-contenu {
+    flex: 1;
+    padding: 0;
+}

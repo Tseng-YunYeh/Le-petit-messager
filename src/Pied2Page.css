@@ -1,0 +1,42 @@
+.Pied2Page {
+    background-color: #111125;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 2px solid #c9a96e33;
+}
+
+.Pied2Page-titre {
+    font-size: 1.1rem;
+    color: #e8d5b0;
+    margin-bottom: 0.3rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.Pied2Page-equipe {
+    font-size: 0.9rem;
+    color: #b0a080;
+    margin-bottom: 0.2rem;
+}
+
+.Pied2Page-cours {
+    font-size: 0.8rem;
+    color: #6a5a40;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.Pied2Page-copy {
+    font-size: 0.75rem;
+    color: #6a5a40;
+}

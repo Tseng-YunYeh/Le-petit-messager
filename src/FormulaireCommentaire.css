@@ -1,0 +1,79 @@
+.FormulaireCommentaire {
+    background-color: #151528;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #c9a96e22;
+}
+
+.FormulaireCommentaire-titre {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #e8d5b0;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.FormulaireCommentaire-champ {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        color: #b0a080;
+        font-size: 0.9rem;
+    }
+}
+
+
+.FormulaireCommentaire-champ input,
+.FormulaireCommentaire-champ textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #c9a96e33;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: #0d0d1a;
+    color: #d4c5a9;
+    transition: border-color 0.3s;
+}
+
+.FormulaireCommentaire-champ input:focus,
+.FormulaireCommentaire-champ textarea:focus {
+    outline: none;
+    border-color: #c9a96e;
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+}
+
+.FormulaireCommentaire-champ textarea {
+    resize: vertical;
+}
+
+.FormulaireCommentaire-bouton {
+    background-color: #c9a96e;
+    color: #0d0d1a;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.FormulaireCommentaire-bouton:hover {
+    background-color: #dfc08a;
+    transform: translateY(-2px);
+}
+
+.FormulaireCommentaire-erreur {
+    color: #c0392b;
+    background-color: #2a1a1a;
+    border: 1px solid #c0392b44;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+}

@@ -1,0 +1,83 @@
+.Commentaires {
+    padding: 2rem 1rem;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.Commentaires-titre {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    color: #e8d5b0;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.Commentaires-description {
+    text-align: center;
+    color: #8a7a60;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.Commentaires-compte {
+    text-align: center;
+    color: #c9a96e;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.Commentaires-tri {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.Commentaires-tri-label {
+    font-weight: 600;
+    color: #8a7a60;
+    font-size: 0.9rem;
+}
+
+.Commentaires-tri-bouton {
+    background-color: #1e1e3a;
+    border: 1px solid #c9a96e33;
+    padding: 0.35rem 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #b0a080;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Commentaires-tri-bouton:hover {
+    background-color: #c9a96e;
+    color: #0d0d1a;
+}
+
+.Commentaires-tri-bouton--actif {
+    background-color: #c9a96e;
+    color: #0d0d1a;
+}
+
+.Commentaires-vide {
+    text-align: center;
+    color: #6a5a40;
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+.Commentaires-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* ===== Tablette (min-width: 768px) ===== */
+@media (min-width: 768px) {
+    .Commentaires-titre {
+        font-size: 1.8rem;
+    }
+}

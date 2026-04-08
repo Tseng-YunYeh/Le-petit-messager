@@ -1,0 +1,77 @@
+.Aime {
+    padding: 2rem 1rem;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Aime-titre {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #e8d5b0;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.Aime-description {
+    color: #8a7a60;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.Aime-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.Aime-bouton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border: 2px solid #c0392b;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #e8d5b0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.Aime-bouton:hover {
+    background-color: #c0392b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.Aime-bouton--actif {
+    background-color: #c0392b;
+    color: #fff;
+    animation: pulse 0.3s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.Aime-compte {
+    font-size: 1rem;
+    color: #8a7a60;
+}
+
+.Aime-nombre {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #c0392b;
+}
+
+/* ===== Tablette (min-width: 768px) ===== */
+@media (min-width: 768px) {
+    .Aime-titre {
+        font-size: 1.8rem;
+    }
+}

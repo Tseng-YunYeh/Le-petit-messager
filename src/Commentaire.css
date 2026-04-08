@@ -1,0 +1,109 @@
+.Commentaire {
+    position: relative;
+    background-color: #151528;
+    border: 1px solid #c9a96e22;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.Commentaire::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.Commentaire:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Commentaire--suppression {
+    overflow: hidden;
+    pointer-events: none;
+    animation: CommentaireDisparition 650ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.Commentaire--suppression::after {
+    animation: CommentaireBrume 650ms ease-out forwards;
+}
+
+.Commentaire-entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.Commentaire-nom {
+    color: #e8d5b0;
+    font-size: 0.95rem;
+}
+
+.Commentaire-date {
+    font-size: 0.8rem;
+    color: #6a5a40;
+    font-style: italic;
+}
+
+.Commentaire-texte {
+    color: #b0a080;
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.Commentaire-supprimer {
+    background: none;
+    border: 1px solid #8b3a3a;
+    color: #c0392b;
+    padding: 0.25rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Commentaire-supprimer:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+@keyframes CommentaireDisparition {
+    0% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg) scale(1);
+        filter: blur(0);
+        max-height: 240px;
+        margin-bottom: 0;
+    }
+    45% {
+        transform: translateX(8px) rotate(-0.6deg) scale(0.99);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-24px) rotate(-2deg) scale(0.92);
+        filter: blur(3px);
+        max-height: 0;
+        margin-bottom: -0.8rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-width: 0;
+    }
+}
+
+@keyframes CommentaireBrume {
+    0% {
+        opacity: 0;
+        background: radial-gradient(circle at 30% 50%, rgba(255, 224, 178, 0) 0%, rgba(255, 224, 178, 0) 60%);
+    }
+    35% {
+        opacity: 0.55;
+        background: radial-gradient(circle at 30% 50%, rgba(255, 224, 178, 0.35) 0%, rgba(255, 224, 178, 0) 65%);
+    }
+    100% {
+        opacity: 0;
+        background: radial-gradient(circle at 60% 30%, rgba(255, 224, 178, 0) 0%, rgba(255, 224, 178, 0) 70%);
+    }
+}
